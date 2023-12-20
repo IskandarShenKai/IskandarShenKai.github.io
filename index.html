@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-5">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 
@@ -42,6 +45,16 @@
     }
   </script>
 </div>
+
+<script>
+  $(document).ready(function () {
+    $(".tradingview-widget-container").resizable({
+      handles: "n, e, s, w, ne, se, sw, nw", // Enable resizing from all edges and corners
+      minHeight: 150, // Set minimum height
+      minWidth: 150,  // Set minimum width
+    });
+  });
+</script>
 
 </body>
 </html>
